@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f0fe;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: backgroundSlideshow 25s infinite;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* Ensure container is above background */
+}
+
+@keyframes backgroundSlideshow {
+    0% {
+        background-image: url('./images/pexels-pixabay-209831.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    33% {
+        background-image: url('./images/pexels-brett-sayles-1431822.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    66% {
+        background-image: url('./images/pexels-binyaminmellish-108941.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    /* 66% {
+        background-image: url('./images/photorealistic-style-clouds-storm.jpg');
+        background-size: cover;
+        background-position: center;
+    } */
+    100% {
+        background-image: url('./images/fluffy-clouds-windy-sky-with-sun.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+/* Other styles remain unchanged */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    /* From https://css.glass */
+background: rgba(101, 131, 130, 0.46);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
+border: 1px solid rgba(101, 131, 130, 0.31);}
+
+    /* background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+} */
+
+h1 {
+    text-align: center;
+    color: #0a045e;;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #3e4e88;
+    margin-top: 20px;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #3e4e88;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+.weather-result, .forecast-result {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.map {
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+#favoritesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#favoritesList li {
+    text-align: center;
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#favoritesList li:hover {
+    background-color: #d3d3d3;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.container.dark {
+    background: #3c3c3c;
+}
+
+h1.dark, h2.dark {
+    color: #ffffff;
+}
+
+button.dark {
+    background-color: #555;
+}
+
+button.dark:hover {
+    background-color: #777;
+}
+
+.error-message.dark {
+    color: #ff6b6b;
+}
+
