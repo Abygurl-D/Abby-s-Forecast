@@ -19,6 +19,10 @@ async function fetchWeather() {
     const apiKey = 'f55844c5f5c1ee2e5acab129de267516'; 
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${unit}`;
+
+
+
+    
     
     // Reset previous results
     resetResults();
