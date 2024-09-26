@@ -142,8 +142,9 @@ function initializeMap(lat, lon) {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
     }).addTo(map);
-    
+    console.log(map);
     L.marker([lat, lon]).addTo(map).bindPopup('Location').openPopup();
+    
 }
 
 function toggleTheme() {

@@ -1,17 +1,17 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e8f0fe;
     transition: background-color 0.3s, color 0.3s;
-}
+} */
 
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     animation: backgroundSlideshow 25s infinite;
 }
 
@@ -19,11 +19,13 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    background: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 1; /* Ensure container is above background */
+    z-index: 1;
+    /* Ensure container is above background */
 }
 
 @keyframes backgroundSlideshow {
@@ -32,17 +34,20 @@ body {
         background-size: cover;
         background-position: center;
     }
+
     33% {
         background-image: url('./images/pexels-brett-sayles-1431822.jpg');
         background-size: cover;
         background-position: center;
     }
+
     66% {
         background-image: url('./images/pexels-binyaminmellish-108941.jpg');
         background-size: cover;
         background-position: center;
     }
-    /* 66% {
+
+    /* 76% {
         background-image: url('./images/photorealistic-style-clouds-storm.jpg');
         background-size: cover;
         background-position: center;
@@ -56,21 +61,20 @@ body {
 
 
 
-/* Other styles remain unchanged */
-
 .container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     /* From https://css.glass */
-background: rgba(101, 131, 130, 0.46);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.3px);
--webkit-backdrop-filter: blur(3.3px);
-border: 1px solid rgba(101, 131, 130, 0.31);}
+    background: rgba(101, 131, 130, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(101, 131, 130, 0.31);
+}
 
-    /* background: transparent;
+/* background: transparent;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
@@ -78,7 +82,8 @@ border: 1px solid rgba(101, 131, 130, 0.31);}
 
 h1 {
     text-align: center;
-    color: #0a045e;;
+    color: #0a045e;
+    ;
     margin-bottom: 20px;
 }
 
@@ -113,7 +118,8 @@ button:hover {
     background-color: #2c3e50;
 }
 
-.weather-result, .forecast-result {
+.weather-result,
+.forecast-result {
     text-align: center;
     font-size: 1.2em;
     color: #333;
@@ -167,10 +173,11 @@ body.dark {
 }
 
 .container.dark {
-    background: #3c3c3c;
+    background: darkgray;
 }
 
-h1.dark, h2.dark {
+h1.dark,
+h2.dark {
     color: #ffffff;
 }
 
@@ -185,4 +192,3 @@ button.dark:hover {
 .error-message.dark {
     color: #ff6b6b;
 }
-
